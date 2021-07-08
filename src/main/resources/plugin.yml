@@ -1,0 +1,24 @@
+name: Essential
+version: ${project.version}
+main: de.cfp.essential.Essential
+api-version: 1.16
+authors: [ cfp ]
+commands:
+  gm:
+    description: Change your gamemode
+    usage: /gm <gamemode>
+  warp:
+    description: Warp to a predefined warp
+    usage: /createwarp <warp>
+  createwarp:
+    description: Create a warp
+    usage: /createwarp <name>
+  delwarp:
+    description: Delete a warp
+    usage: /delwarp <name>
+  fly:
+    description: Enable or disable flying
+    usage: /fly
+  speed:
+    description: Change your fly/walking speed
+    usage: /speed <number>

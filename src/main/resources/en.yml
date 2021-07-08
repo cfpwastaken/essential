@@ -1,0 +1,28 @@
+no_perm: "§cYou don't have permissions to execute this command."
+player_only: "§cYou need to be a player to execute this command."
+usage_prefix: "§cUsage: "
+nuclear_bomb: "§aNuclear bomb activated."
+teleported: "§aYou have been teleported!"
+
+gamemode:
+  switched: "§aSet gamemode to %g"
+  survival: "survival"
+  creative: "creative"
+  adventure: "adventure"
+  spectator: "spectator"
+  invalid: "§cInvalid gamemode specified"
+
+warp:
+  created: "§aWarp created!"
+  already_exists: "§cWarp already exists"
+  deleted: "§aWarp deleted!"
+  doesnt_exist: "§cWarp doesnt exist"
+
+fly:
+  enabled: "§aEnabled Flying"
+  disabled: "§cDisabled Flying"
+
+speed:
+  wrong_number: "§cPlease provide a number between 1 and 10."
+  walk: "§aSet walking speed to %s"
+  fly: "§aSet flying speed to %s"
