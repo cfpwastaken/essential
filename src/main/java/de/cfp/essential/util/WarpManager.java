@@ -3,6 +3,7 @@ package de.cfp.essential.util;
 import de.cfp.essential.Essential;
 import org.bukkit.Location;
 
+import java.io.File;
 import java.io.IOException;
 
 public class WarpManager {
@@ -14,7 +15,7 @@ public class WarpManager {
     public static void createWarp(String name, Location location) {
         Essential.getWarpConfiguration().set(name, location);
         try {
-            Essential.getWarpConfiguration().save(Essential.getEssential().getConfig().getString("perm_prefix") + "warp.delete");
+            Essential.getWarpConfiguration().save(new File(Essential.getEssential().getDataFolder(), "warps.yml"));
         } catch (IOException e) {
             e.printStackTrace();
         }
@@ -23,7 +24,7 @@ public class WarpManager {
     public static void deleteWarp(String name) {
         Essential.getWarpConfiguration().set(name, null);
         try {
-            Essential.getWarpConfiguration().save(Essential.getEssential().getConfig().getString("perm_prefix") + "warp.delete");
+            Essential.getWarpConfiguration().save(new File(Essential.getEssential().getDataFolder(), "warps.yml"));
         } catch (IOException e) {
             e.printStackTrace();
         }

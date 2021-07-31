@@ -22,3 +22,18 @@ commands:
   speed:
     description: Change your fly/walking speed
     usage: /speed <number>
+  day:
+    description: Set the time to day
+    usage: /day
+  night:
+    description: Set the time to night
+    usage: /night
+  midday:
+    description: Set the time to midday
+    usage: /midday
+  noon:
+    description: Set the time to noon
+    usage: /noon
+  midnight:
+    description: Set the time to midnight
+    usage: /midnight

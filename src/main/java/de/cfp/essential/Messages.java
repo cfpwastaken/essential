@@ -15,7 +15,11 @@ public class Messages {
     private static FileConfiguration messages;
 
     public static String getMessage(String message) {
-        return messages.getString(message);
+        if(messages.contains(message)) {
+            return messages.getString(message);
+        } else {
+            return message;
+        }
     }
 
     public static void loadMessages() {

@@ -36,7 +36,13 @@ public class CMDSpeed implements CommandExecutor {
                         p.sendMessage(Messages.getMessage("speed.walk").replaceAll("%s", speed + ""));
                     }
                 } else {
-                    p.sendMessage(Messages.getMessage("usage_prefix") + "/speed <number>");
+                    if (p.isFlying()) {
+                        p.setFlySpeed(0.1f);
+                        p.sendMessage(Messages.getMessage("speed.reset.fly"));
+                    } else {
+                        p.setWalkSpeed(0.2f);
+                        p.sendMessage(Messages.getMessage("speed.reset.walk"));
+                    }
                 }
             } else {
                 p.sendMessage(Messages.getMessage("no_perm"));

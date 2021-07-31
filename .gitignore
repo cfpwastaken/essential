@@ -118,3 +118,5 @@ run/
 
 #####################################
 TODO
+/src/main/java/de/cfp/essential/command/money/
+/src/main/java/de/cfp/essential/util/MoneyManager.java

@@ -1,11 +1,19 @@
 package de.cfp.essential;
 
-import de.cfp.essential.command.CMDCreateWarp;
-import de.cfp.essential.command.CMDDeleteWarp;
+import de.cfp.essential.command.money.CMDBalTop;
+import de.cfp.essential.command.money.CMDEco;
+import de.cfp.essential.command.money.CMDMoney;
+import de.cfp.essential.command.money.CMDPay;
+import de.cfp.essential.command.time.CMDDay;
+import de.cfp.essential.command.time.CMDMidday;
+import de.cfp.essential.command.time.CMDMidnight;
+import de.cfp.essential.command.time.CMDNight;
+import de.cfp.essential.command.warp.CMDCreateWarp;
+import de.cfp.essential.command.warp.CMDDeleteWarp;
 import de.cfp.essential.command.CMDFly;
 import de.cfp.essential.command.CMDGamemode;
 import de.cfp.essential.command.CMDSpeed;
-import de.cfp.essential.command.CMDWarp;
+import de.cfp.essential.command.warp.CMDWarp;
 import de.cfp.essential.tab.TabCompleteGamemode;
 import org.bukkit.configuration.file.YamlConfiguration;
 import org.bukkit.plugin.java.JavaPlugin;
@@ -16,6 +24,7 @@ import java.io.IOException;
 public class Essential extends JavaPlugin {
 
     public static YamlConfiguration warpConfiguration;
+    public static YamlConfiguration moneyConfiguration;
     private static Essential instance;
 
     @Override
@@ -41,6 +50,12 @@ public class Essential extends JavaPlugin {
         getCommand("fly").setExecutor(new CMDFly());
 
         getCommand("speed").setExecutor(new CMDSpeed());
+
+        getCommand("day").setExecutor(new CMDDay());
+        getCommand("night").setExecutor(new CMDNight());
+        getCommand("midday").setExecutor(new CMDMidday());
+        getCommand("noon").setExecutor(new CMDMidday());
+        getCommand("midnight").setExecutor(new CMDMidnight());
     }
 
     private void loadConfig() {
@@ -60,4 +75,9 @@ public class Essential extends JavaPlugin {
     public static Essential getEssential() {
         return instance;
     }
+
+    public static YamlConfiguration getMoneyConfiguration() {
+        return moneyConfiguration;
+    }
+
 }

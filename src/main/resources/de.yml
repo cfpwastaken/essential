@@ -26,3 +26,17 @@ speed:
   wrong_number: "§cBitte gebe eine Nummer zwischen 1 und 10."
   walk: "§aLaufgeschwindigkeit auf %s gesetzt"
   fly: "§aFlieggeschwindigkeit auf %s gesetzt"
+  reset:
+    walk: "§aLaufgeschwindigkeit wurde zurückgesetzt"
+    fly: "§aFlieggeschwindigkeit wurde zurückgesetzt"
+
+money:
+  myself: "§aDu hast %a%c"
+  others: "§a%p hat %a%c"
+
+time:
+  set: "§aZeit auf %t gesetzt."
+  day: "Tag"
+  night: "Nacht"
+  midday: "Mittag"
+  midnight: "Mitternacht"

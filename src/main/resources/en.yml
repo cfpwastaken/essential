@@ -26,3 +26,17 @@ speed:
   wrong_number: "§cPlease provide a number between 1 and 10."
   walk: "§aSet walking speed to %s"
   fly: "§aSet flying speed to %s"
+  reset:
+    walk: "§aReset walking speed"
+    fly: "§aReset flying speed"
+
+money:
+  myself: "§aYou have %a%c"
+  others: "§a%p has %a%c"
+
+time:
+  set: "§aSet the time to %t"
+  day: "day"
+  night: "night"
+  midday: "midday"
+  midnight: "midnight"

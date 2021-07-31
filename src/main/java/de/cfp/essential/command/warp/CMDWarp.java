@@ -1,4 +1,4 @@
-package de.cfp.essential.command;
+package de.cfp.essential.command.warp;
 
 import de.cfp.essential.Essential;
 import de.cfp.essential.Messages;

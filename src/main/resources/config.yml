@@ -9,3 +9,11 @@ perm_prefix: "essential."
 time:
   # If essential should stop time when no players are online.
   stopwithnoplayers: false # WIP
+
+###########################################
+# Essential Money                         #
+###########################################
+
+money:
+  currency: "$"
+  starter: 1000
